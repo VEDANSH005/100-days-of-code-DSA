@@ -24,6 +24,7 @@ Explanation: Compare the next unprocessed arrival time from both logs and append
 int main() {
     int p, q;
     int a[100], b[100], c[200];
+    int i, j, k;
     scanf("%d", &p);
     for (i = 0; i < p; i++) 
     {
@@ -37,6 +38,7 @@ int main() {
 
     i = 0;
     j = 0;
+    k = 0;
     while (i < p && j < q) 
     {
         if (a[i] <= b[j]) 
@@ -69,3 +71,4 @@ int main() {
     }
     return 0;
 }
+
